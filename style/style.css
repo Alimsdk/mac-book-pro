@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-info{
+    display: flex;
+    justify-content: center;
+}
+
+
+.product-img{
+    width: 400px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.product-specification{
+    
+    margin-left: 65px;
+    margin-top: 40px;
+}
+
+.product-title{
+    width: 480px;
+    line-height: 1.4;
+}
+
+.product-title h1{
+    font-size: 35px;
+    color: rgb(22, 21, 21);
+    
+}
+
+.product-title p{
+    font-size: 18px;
+    color: rgb(48, 44, 44);
+    padding-top: 15px;
+}
+
+.selection-part{
+    margin-top: 30px;
+}
+
+.selection-part h3{
+    font-size: 30px;
+} 
+
+.selection-part button{
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.selection-part button:hover,.delivery-part button:hover{
+    background-color: orangered;
+    color: white;
+    border: 0px;
+}
+
+.delivery-part{
+    margin-top: 30px;
+}
+
+.delivery-part button{
+    width: 280px;
+    height: 35px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.calculate{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding-top: 12px;
+}
+
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+ /* promo part starts here */
+.promo{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.promo input{
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+    font-size: 22px;
+}
+
+.promo button{
+    height: 35px;
+    width: 70px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.horizontal-line{
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+    /* margin-bottom: 200px; */
+}
+
+.ultimate-cart h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/* tab and mobile devices */
+@media (max-width:998px) {
+    .product-info{
+        display: flex;
+        flex-direction: column;
+    }
+  .product-img{
+      margin:30px auto;
+      display: flex;
+      justify-content: center;
+  }
+  .product-specification{
+      margin: auto;
+  }
+}
