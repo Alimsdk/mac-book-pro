@@ -8,21 +8,21 @@ function updateData(inputId,price){
 // get total price
 
 function updateTotal(){
-  const baseprice=costingPart('default-cost');
-  const memoryprice=costingPart('extra-memory-cost');
-  const ssdprice=costingPart('extra-storage-cost');
-  const deliverycharge=costingPart('extra-delivery-cost');
+  const basePrice=costingPart('default-cost');
+  const memoryPrice=costingPart('extra-memory-cost');
+  const ssdPrice=costingPart('extra-storage-cost');
+  const deliveryCharge=costingPart('extra-delivery-cost');
   
-  const totalprice=baseprice+memoryprice+ssdprice+deliverycharge;
- document.getElementById('total-cost').innerText=totalprice;
- document.getElementById('total-price').innerText=totalprice;
-  console.log(totalprice);
- return totalprice;
+  const totalPrice=basePrice+memoryPrice+ssdPrice+deliveryCharge;
+ document.getElementById('total-cost').innerText=totalPrice;
+ document.getElementById('total-price').innerText=totalPrice;
+  console.log(totalPrice);
+ return totalPrice;
 }
 
 function costingPart(InputId){
-const priceid=document.getElementById(InputId);
-const price=parseInt(priceid.innerText);
+const priceId=document.getElementById(InputId);
+const price=parseInt(priceId.innerText);
 return price;
 }
 
